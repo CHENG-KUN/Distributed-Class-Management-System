@@ -1,0 +1,15 @@
+module Server{
+	interface ServerInterface{
+	
+	boolean createTRecord(in string managerID,in string firstName,in string lastName,in string address,in string phone,in string specialization,in string location);
+	
+	boolean createSRecord (in string managerID,in string firstName,in string lastName,in string courseRegisted,in string status,in string statusDate);
+	
+	string getRecordCounts (in string managerID);
+	
+	boolean editRecord (in string managerID,in string recordID,in string fieldName,in string newValue);
+	
+	boolean transferRecord (in string managerID,in string recordID,in string serverName);
+
+};
+};
